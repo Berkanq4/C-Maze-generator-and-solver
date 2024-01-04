@@ -98,12 +98,7 @@ void Stack<T>::makeEmpty()
     while (!isEmpty())
         pop();
 }
-/*
-template <class T>
-void Stack<T>::goDown(Stack & stack) {
-    ListNode* ptr = topOfStack;
-    while (ptr->element != )
-}*/
+
 template <class T>
 const Stack<T>& Stack<T>::
 operator=(const Stack<T>& rhs)
@@ -130,17 +125,7 @@ Stack<T>::Stack(const Stack<T>& rhs)
     topOfStack = NULL;
     *this = rhs; // deep copy 
 }
-/*
-template <class T>
-int Stack<T>::number_of_cells(Stack<T> & stack) const{
-    int stack_amount = 0;
-    Stack<T> copy_stack = stack;
-    while (copy_stack.isEmpty() == false) {
-        copy_stack.pop();
-        stack_amount++;
-    }
-    return stack_amount;
-}*/
+
 
 template <class T>
 Stack<T>::~Stack()
